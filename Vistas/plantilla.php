@@ -9,7 +9,7 @@ if (isset($_GET["cerrar_sesion"]) && $_GET["cerrar_sesion"] == 1) {
 
     echo '
             <script>
-                window.location = "http://3.149.249.47/LaCosecha/market-pos//";
+                window.location = "http://host=localhost/";
             </script>        
         ';
 }
