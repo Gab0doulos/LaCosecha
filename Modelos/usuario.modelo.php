@@ -6,9 +6,7 @@ class UsuarioModelo{
 
     static public function mdlIniciarSesion($usuario, $password){
 
-        $logFile = fopen("log.txt", 'a') or die("Error creando archivo");
-        fwrite($logFile, date("d/m/Y H:i:s"). '  ' . $usuario.'-'.$password."\n") or die("Error escribiendo en el archivo");
-        fclose($logFile);
+        
 
         $stmt = Conexion::conectar()->prepare("select *
                                                 from usuarios u 
