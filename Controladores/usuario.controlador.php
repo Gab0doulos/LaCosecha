@@ -20,7 +20,7 @@ class UsuarioControlador{
 
                 echo '
                     <script>
-                        window.location = "http://localhost/market-pos/";
+                        window.location = "http://3.149.249.47/LaCosecha/market-pos/";
                     </script>
                 
                 ';
@@ -28,7 +28,7 @@ class UsuarioControlador{
 
                 echo '
                     <script>
-                        fncSweetAlert("error","Usuario y/o password inválido","http://localhost/market-pos/");
+                        fncSweetAlert("error","Usuario y/o password inválido","http://3.149.249.47/LaCosecha/market-pos/");
                     </script>
                 
                 ';

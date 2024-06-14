@@ -9,7 +9,7 @@ if (isset($_GET["cerrar_sesion"]) && $_GET["cerrar_sesion"] == 1) {
 
     echo '
             <script>
-                window.location = "http://localhost/market-pos//";
+                window.location = "http://3.149.249.47/LaCosecha/market-pos//";
             </script>        
         ';
 }
@@ -32,20 +32,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
     =Required CSS
     ===============================================================-->
 
-    <link rel="shortcut icon" href="vistas/assets/dist/img/AdminLTELogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Vistas/Assets/dist/img/AdminLTELogo.png" type="image/x-icon">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="vistas/assets/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="Vistas/Assets/plugins/fontawesome-free/css/all.min.css">
     <!-- IonIcons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="vistas/assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <link rel="stylesheet" href="Vistas/Assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 
     <!-- Jquery CSS -->
 
-    <link rel="stylesheet" href="vistas/assets/plugins/jquery-ui/css/jquery-ui.css">
+    <link rel="stylesheet" href="Vistas/Assets/plugins/jquery-ui/css/jquery-ui.css">
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -58,33 +58,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="vistas/assets/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="Vistas/Assets/dist/css/adminlte.min.css">
 
     <!-- Estilos personzalidos -->
-    <link rel="stylesheet" href="vistas/assets/dist/css/plantilla.css">
+    <link rel="stylesheet" href="Vistas/Assets/dist/css/plantilla.css">
 
     <!-- ============================================================================================================= -->
     <!-- REQUIRED SCRIPTS -->
     <!-- ============================================================================================================= -->
 
     <!-- jQuery -->
-    <script src="vistas/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="Vistas/Assets/plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap 4 -->
-    <script src="vistas/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Vistas/Assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- ChartJS -->
-    <script src="vistas/assets/plugins/chart.js/Chart.min.js"></script>
+    <script src="Vistas/Assets/plugins/chart.js/Chart.min.js"></script>
 
     <!-- InputMask -->
-    <script src="vistas/assets/plugins/moment/moment.min.js"></script>
-    <script src="vistas/assets/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <script src="Vistas/Assets/plugins/moment/moment.min.js"></script>
+    <script src="Vistas/Assets/plugins/inputmask/jquery.inputmask.min.js"></script>
 
     <!-- SweetAlert2 -->
-    <script src="vistas/assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="Vistas/Assets/plugins/sweetalert2/sweetalert2.min.js"></script>
 
     <!-- jquery UI -->
-    <script src="vistas/assets/plugins/jquery-ui/js/jquery-ui.js"></script>
+    <script src="Vistas/Assets/plugins/jquery-ui/js/jquery-ui.js"></script>
 
     <!-- JS Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -105,9 +105,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
 
     <!-- AdminLTE App -->
-    <script src="vistas/assets/dist/js/adminlte.min.js"></script>
+    <script src="Vistas/Assets/dist/js/adminlte.min.js"></script>
 
-    <script src="vistas/assets/dist/js/plantilla.js"></script>
+    <script src="Vistas/Assets/dist/js/plantilla.js"></script>
 
 
 
@@ -126,7 +126,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <div class="content-wrapper">
 
-            <?php include "vistas/" . $_SESSION["usuario"]->vista ?>
+            <?php include "Vistas/" . $_SESSION["usuario"]->vista ?>
 
         </div>
     </div>
@@ -142,7 +142,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <body>
 
-    <?php include "vistas/login.php"; ?>
+    <?php include "Vistas/login.php"; ?>
 
 </body>
 

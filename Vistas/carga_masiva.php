@@ -53,7 +53,7 @@
         <!-- FILA PARA IMAGEN DEL GIF -->
         <div class="row mx-0">
             <div class="col-lg-12 mx-0 text-center">
-                <img src="vistas/assets/imagenes/loading.gif" id="img_carga" style="display:none;">
+                <img src="Vistas/Assets/imagenes/loading.gif" id="img_carga" style="display:none;">
             </div>
         </div>
     </div><!-- /.container-fluid -->
