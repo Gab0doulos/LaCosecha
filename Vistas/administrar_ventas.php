@@ -193,7 +193,7 @@ $(document).ready(function() {
 
                 for (let i = 0; i < respuesta.length; i++) {
                     
-                    TotalVenta = loaders parseFloat(respuesta[i][5].replace('Q./ ', '')) + parseFloat(TotalVenta);
+                    TotalVenta =  ParseFloat(respuesta[i][5].replace('Q./ ', '')) + parseFloat(TotalVenta);
 
                 }
                 $("#totalVenta").html(TotalVenta.toFixed(2))
