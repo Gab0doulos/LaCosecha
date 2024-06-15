@@ -338,7 +338,7 @@ $(document).ready(function() {
                     var TotalVenta = 0.00;
 
                     for (let i = 0; i < respuesta.length; i++) {
-                        TotalVenta = parseFloat(respuesta[i][5]) + parseFloat(TotalVenta);
+                        TotalVenta = parseFloat(respuesta[i][5])+ parseFloat(TotalVenta);
 
                     }
                     $("#totalVenta").html(TotalVenta.toFixed(2))
