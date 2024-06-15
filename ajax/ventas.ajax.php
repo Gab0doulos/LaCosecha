@@ -1,7 +1,7 @@
 <?php
 
-require_once "../controladores/ventas.controlador.php";
-require_once "../modelos/ventas.modelo.php";
+require_once "../Controladores/ventas.controlador.php";
+require_once "../Modelos/ventas.modelo.php";
 
 class AjaxVentas{
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once "../../modelos/conexion.php";
+require_once "../../Modelos/conexion.php";
 
 if ($_POST['action'] == 'edit') {
 
