@@ -332,14 +332,15 @@ $(document).ready(function() {
                 url: 'ajax/ventas.ajax.php',
                 type: 'POST',
                 dataType: 'json',
+                success: function(respuesta) {
+            console.log("respuesta", respuesta)
+        }
                 "dataSrc": function(respuesta) {
 
                     var TotalVenta = 0.00;
 
                     for (let i = 0; i < respuesta.length; i++) {
-                        if (respuesta[i] && respuesta[i][5]) {
-                            TotalVenta = parseFloat(respuesta[i][5].replace('Q./ ', '')) + parseFloat(TotalVenta);
-}
+                        TotalVenta = parseFloat(respuesta[i][5].replace('Q./ ', '')) + parseFloat(TotalVenta);
 
                     }
                     $("#totalVenta").html(TotalVenta.toFixed(2))
