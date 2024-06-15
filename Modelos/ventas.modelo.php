@@ -121,6 +121,8 @@ class VentasModelo{
 
     static public function mdlEliminarVenta($nroBoleta){
 
+
+        try{
         $stmt = Conexion::conectar()->prepare("call prc_eliminar_venta(:nroBoleta)");
 
         $stmt -> bindParam(":nroBoleta", $nroBoleta, PDO::PARAM_STR);
@@ -128,6 +130,9 @@ class VentasModelo{
         $stmt -> execute();
 
         return $stmt -> fetch();
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
         
 
     }
