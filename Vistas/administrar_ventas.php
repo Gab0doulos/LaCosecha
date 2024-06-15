@@ -332,9 +332,7 @@ $(document).ready(function() {
                 url: 'ajax/ventas.ajax.php',
                 type: 'POST',
                 dataType: 'json',
-                success: function(respuesta) {
-            console.log("respuesta", respuesta)
-        }
+                
                 "dataSrc": function(respuesta) {
 
                     var TotalVenta = 0.00;
