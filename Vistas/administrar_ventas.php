@@ -192,7 +192,7 @@ $(document).ready(function() {
                 var TotalVenta = 0.00;
 
                 for (let i = 0; i < respuesta.length; i++) {
-                    if(!respuesta) return
+                    if(!TotalVenta) return
                     TotalVenta = parseFloat(respuesta[i][5].replace('Q./ ', '')) + parseFloat(TotalVenta);
 
                 }
