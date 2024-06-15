@@ -349,7 +349,7 @@ FETCH cursor_i INTO v_codigo, v_cantidad;
 	  LEAVE read_loop;
 	END IF;
     
-    UPDATE PRODUCTOS 
+    UPDATE productos 
        SET stock_producto = stock_producto + v_cantidad
     WHERE CAST(codigo_producto AS CHAR CHARACTER SET utf8) = CAST(v_codigo AS CHAR CHARACTER SET utf8);
     
@@ -473,27 +473,48 @@ DELIMITER ;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `prc_ObtenerDatosDashboard`()
     NO SQL
-BEGIN
-declare totalProductos int;
-declare totalCompras float;
-declare totalVentas float;
-declare ganancias float;
-declare productosPocoStock int;
-declare ventasHoy float;
-
-SET totalProductos = (SELECT count(*) FROM productos p);
-SET totalCompras = (select sum(p.precio_compra_producto*p.stock_producto) from productos p);
-set totalVentas = (select sum(vc.total_venta) from venta_cabecera vc);
-set ganancias = (select sum(vd.total_venta - (p.precio_compra_producto * vd.cantidad)) from venta_detalle vd inner join productos p on vd.codigo_producto = p.codigo_producto);
-set productosPocoStock = (select count(1) from productos p where p.stock_producto <= p.minimo_stock_producto);
-set ventasHoy = (select sum(vc.total_venta) from venta_cabecera vc where vc.fecha_venta = CURRENT_DATE());
-
-SELECT IFNULL(totalProductos,0) AS totalProductos,
-	   IFNULL(ROUND(totalCompras,2),0) AS totalCompras,
-       IFNULL(ROUND(totalVentas,2),0) AS totalVentas,
-       IFNULL(ROUND(ganancias,2),0) AS ganancias,
-       IFNULL(productosPocoStock,0) AS productosPocoStock,
-       IFNULL(ROUND(ventasHoy,2),0) AS ventasHoy;
+BEGIN
+
+declare totalProductos int;
+
+declare totalCompras float;
+
+declare totalVentas float;
+
+declare ganancias float;
+
+declare productosPocoStock int;
+
+declare ventasHoy float;
+
+
+
+SET totalProductos = (SELECT count(*) FROM productos p);
+
+SET totalCompras = (select sum(p.precio_compra_producto*p.stock_producto) from productos p);
+
+set totalVentas = (select sum(vc.total_venta) from venta_cabecera vc);
+
+set ganancias = (select sum(vd.total_venta - (p.precio_compra_producto * vd.cantidad)) from venta_detalle vd inner join productos p on vd.codigo_producto = p.codigo_producto);
+
+set productosPocoStock = (select count(1) from productos p where p.stock_producto <= p.minimo_stock_producto);
+
+set ventasHoy = (select sum(vc.total_venta) from venta_cabecera vc where vc.fecha_venta = CURRENT_DATE());
+
+
+
+SELECT IFNULL(totalProductos,0) AS totalProductos,
+
+	   IFNULL(ROUND(totalCompras,2),0) AS totalCompras,
+
+       IFNULL(ROUND(totalVentas,2),0) AS totalVentas,
+
+       IFNULL(ROUND(ganancias,2),0) AS ganancias,
+
+       IFNULL(productosPocoStock,0) AS productosPocoStock,
+
+       IFNULL(ROUND(ventasHoy,2),0) AS ventasHoy;
+
 END ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;

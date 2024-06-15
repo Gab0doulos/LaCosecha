@@ -146,7 +146,7 @@ class ProductosModelo{
 
             $fecha = date('Y-m-d');
 
-            $stmt = Conexion::conectar()->prepare("INSERT INTO PRODUCTOS(codigo_producto, 
+            $stmt = Conexion::conectar()->prepare("INSERT INTO productos(codigo_producto, 
                                                                         id_categoria_producto, 
                                                                         descripcion_producto, 
                                                                         precio_compra_producto, 

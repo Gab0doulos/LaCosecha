@@ -171,7 +171,7 @@ if(isset($_POST['accion']) && $_POST['accion'] == 1){ // parametro para listar p
    
 }else if(isset($_POST['accion']) && $_POST['accion'] == 7){  //accion para obtener datos de un producto
 
-    $listaProducto = new ajaxProductos();
+    $listaProducto = new ajax();
     $listaProducto->codigo_producto = $_POST["codigo_producto"];
 
     $listaProducto -> ajaxGetDatosProducto();
