@@ -51,6 +51,7 @@ class VentasModelo{
         
                     if($stmt -> execute()){
 
+                        try{
                         $stmt = null;
         
                         $stmt = Conexion::conectar()->prepare("UPDATE PRODUCTOS SET stock_producto = stock_producto - :cantidad, ventas_producto = ventas_producto + :cantidad
@@ -64,6 +65,10 @@ class VentasModelo{
                         }else{
                             $resultado = "Error al actualizar el stock";
                         }
+
+                    } catch (PDOException $e) {
+                        echo "Error: " . $e->getMessage();
+                    }
                         
                     }else{
                         $resultado = "Error al registrar la venta";
