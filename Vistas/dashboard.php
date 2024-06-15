@@ -238,19 +238,19 @@
                     success: function(respuesta) {
                         console.log("respuesta", respuesta);
                         $("#totalProductos").html(respuesta[0]['totalProductos']);
-                        $("#totalCompras").html('Q ' + respuesta[0]['totalCompras'].replace(
+                        $("#totalCompras").html('Q ' + strval($respuesta[0]['totalCompras']).replace(
                             /\d(?=(\d{3})+\.)/g,
                             "$&,"))
-                        $("#totalVentas").html('Q ' + respuesta[0]['totalVentas'].replace(
+                        $("#totalVentas").html('Q ' + strval($respuesta[0]['totalVentas']).replace(
                             /\d(?=(\d{3})+\.)/g,
                             "$&,"))
-                        $("#totalGanancias").html('Q ' + respuesta[0]['ganancias'].replace(
+                        $("#totalGanancias").html('Q ' + strval($respuesta[0]['ganancias']).replace(
                             /\d(?=(\d{3})+\.)/g,
                             "$&,"))
                         $("#totalProductosMinStock").html(respuesta[0][
                             'productosPocoStock'
                         ])
-                        $("#totalVentasHoy").html('Q ' + respuesta[0]['ventasHoy'].replace(
+                        $("#totalVentasHoy").html('Q ' + strval($respuesta[0]['ventasHoy']).replace(
                             /\d(?=(\d{3})+\.)/g,
                             "$&,"))
 
