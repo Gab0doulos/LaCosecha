@@ -5,7 +5,7 @@ use \PhpOffice\PhpSpreadsheet\IOFactory;
 require_once "../Controladores/productos.controlador.php";
 require_once "../Modelos/productos.modelo.php";
 
-require_once "../Vendor/autoload.php";
+require_once "../vendor/autoload.php";
 
 class ajaxProductos{
 
