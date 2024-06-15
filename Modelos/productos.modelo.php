@@ -131,7 +131,7 @@ class ProductosModelo{
     // obtener listado total de productos para el datatable
     static public function mdlListarProductos(){
 
-        $stmt = Conexion::conectar()->prepare('call prc_ListarProductos');
+        $stmt = Conexion::conectar()->prepare('call prc_ListarProductos()');
 
         $stmt -> execute();
 
