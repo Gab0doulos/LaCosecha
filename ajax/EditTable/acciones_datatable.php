@@ -10,6 +10,7 @@ if ($_POST['action'] == 'edit') {
         'id' => $_POST['id']
     );
 
+    try {
     $statement = Conexion::conectar()->prepare("call prc_ActualizarDetalleVenta(:p_codigo_producto, :p_cantidad, :p_id)");
     $statement -> bindParam(":p_codigo_producto",$data["codigo_producto"],PDO::PARAM_STR);
     $statement -> bindParam(":p_cantidad",$data["cantidad"],PDO::PARAM_STR);
@@ -18,5 +19,9 @@ if ($_POST['action'] == 'edit') {
     $statement->execute();
 
     echo json_encode($_POST);
+
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
 
 }
