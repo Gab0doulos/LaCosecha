@@ -236,7 +236,7 @@
                     method: 'POST',
                     dataType: 'json',
                     success: function(respuesta) {
-                        console.log("respuesta", respuesta);
+                        //console.log("respuesta", respuesta);
                         $("#totalProductos").html(respuesta[0]['totalProductos']);
                         $("#totalCompras").html('Q ' + strval($respuesta[0]['totalCompras']).replace(
                             /\d(?=(\d{3})+\.)/g,
