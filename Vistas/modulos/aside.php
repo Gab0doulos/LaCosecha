@@ -152,7 +152,7 @@
                      </a>
                  </li> -->
                 <li class="nav-item">
-                    <a style="cursor: pointer;" class="nav-link" href="http:http://host=localhost///?cerrar_sesion=1">
+                    <a style="cursor: pointer;" class="nav-link" href="http://3.133.127.13/LaCosecha///?cerrar_sesion=1">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>
                             Cerrar Sesion
