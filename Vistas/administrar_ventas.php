@@ -164,25 +164,6 @@ $(document).ready(function() {
     
 
     table = $('#lstVentas').DataTable({
-        "columnDefs": [{
-                visible: false,
-                targets: groupColumn
-            },
-            {
-                targets: [1, 2, 3, 4, 5],
-                orderable: false
-            }
-        ],
-        "order": [
-            [6, 'desc']
-        ],
-        dom: 'Bfrtip',
-        buttons: [
-            'excel', 'print', 'pageLength',
-
-        ],
-        lengthMenu: [0, 5, 10, 15, 20, 50],
-        "pageLength": 15,
         ajax: {
             url: 'ajax/ventas.ajax.php',
             type: 'POST',
@@ -205,7 +186,26 @@ $(document).ready(function() {
                 'fechaDesde': ventas_desde,
                 'fechaHasta': ventas_hasta
             }
-        },
+        },"columnDefs": [{
+                visible: false,
+                targets: groupColumn
+            },
+            {
+                targets: [1, 2, 3, 4, 5],
+                orderable: false
+            }
+        ],
+        "order": [
+            [6, 'desc']
+        ],
+        dom: 'Bfrtip',
+        buttons: [
+            'excel', 'print', 'pageLength',
+
+        ],
+        lengthMenu: [0, 5, 10, 15, 20, 50],
+        "pageLength": 15,
+       
         drawCallback: function(settings) {
 
             var api = this.api();
