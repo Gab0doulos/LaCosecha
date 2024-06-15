@@ -2,8 +2,8 @@
 use \PhpOffice\PhpSpreadsheet\IOFactory;
 
 
-require_once "../controladores/productos.controlador.php";
-require_once "../modelos/productos.modelo.php";
+require_once "../Controladores/productos.controlador.php";
+require_once "../Modelos/productos.modelo.php";
 
 require_once "../vendor/autoload.php";
 
