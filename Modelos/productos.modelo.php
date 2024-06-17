@@ -8,7 +8,7 @@ use \PhpOffice\PhpSpreadsheet\IOFactory;
 class ProductosModelo{
 
     //carga masiva
-    static public function mdlCargaMasivaProductos($fileProductos){
+   /* static public function mdlCargaMasivaProductos($fileProductos){
 
         $nombreArchivo = $fileProductos['tmp_name'];
 
@@ -113,7 +113,7 @@ class ProductosModelo{
         $respuesta["totalProductos"] = $productosRegistrados;
 
         return $respuesta;
-    }
+    }*/
 
     //Buscar Id Categoria
     static public function mdlBuscarIdCategoria($nombreCategoria){
