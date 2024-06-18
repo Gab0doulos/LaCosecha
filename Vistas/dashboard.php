@@ -299,7 +299,7 @@
 
 
                     });
-                },50000);
+                },20000);
 
                 /* =======================================================
     SOLICITUD AJAX GRAFICO DE BARRAS DE VENTAS DEL MES
