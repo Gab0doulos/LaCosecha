@@ -234,7 +234,7 @@
                                     icon: 'success',
                                     title: 'La categoria se elimino correctamente'
                                 });
-                                table.ajax.reload();
+                                
                                 
                                 }else{
                                     Toast.fire({
