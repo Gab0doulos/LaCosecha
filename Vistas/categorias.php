@@ -233,13 +233,13 @@
                                     icon: 'success',
                                     title: 'El producto se elimino correctamente'
                                 });
-                                table.ajax.reload();
+                                
                                 }else{
                                     Toast.fire({
                                     icon: 'error',
                                     title: 'El producto no se pudo eliminar'
                                 });
-
+                                table.ajax.reload();
                                 }
                             }
                         })
