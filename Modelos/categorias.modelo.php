@@ -71,7 +71,7 @@ class CategoriasModelo{
     }
 
     static public function mdlEliminarCategoria($table, $id, $nameId){
-        $stmt = Conexion::conectar()->prepare("DELETE FROM $table WHERE $nameId = :$nameId");
+        $stmt = Conexion::conectar()->prepare("Delete FROM $table Where $nameId = :$nameId");
 
         $stmt -> bindParam(":" .$nameId, $id, PDO::PARAM_INT);
 
