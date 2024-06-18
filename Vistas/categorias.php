@@ -227,19 +227,21 @@
                             processData: false,
                             dataType: 'json',
                             success: function(respuesta){
+                                console.log(respuesta)
                                 if (respuesta == "ok") {
 
                                     Toast.fire({
                                     icon: 'success',
-                                    title: 'El producto se elimino correctamente'
+                                    title: 'La categoria se elimino correctamente'
                                 });
+                                table.ajax.reload();
                                 
                                 }else{
                                     Toast.fire({
                                     icon: 'error',
-                                    title: 'El producto no se pudo eliminar'
+                                    title: 'La categoria no se pudo eliminar'
                                 });
-                                table.ajax.reload();
+                                
                                 }
                             }
                         })
