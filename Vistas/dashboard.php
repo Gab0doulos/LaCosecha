@@ -231,7 +231,7 @@
 
                 /*script ajax para llamar store procedure de las tarjetas informativas*/
 
-                $.ajax({
+                /*$.ajax({
                     url: "ajax/dashboard.ajax.php",
                     method: 'POST',
                     dataType: 'json',
@@ -255,7 +255,7 @@
                             "$&,"))
 
                     }
-                });
+                });*/
 
 
 
