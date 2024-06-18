@@ -266,7 +266,7 @@
                         method: 'POST',
                         dataType: 'json',
                         success: function(respuesta) {
-                            console.log("respuesta", respuesta);
+                            //console.log("respuesta", respuesta);
                             $("#totalProductos").html(respuesta[0][
                                 'totalProductos'
                             ]);
@@ -299,7 +299,7 @@
 
 
                     });
-                });
+                },);
 
                 /* =======================================================
     SOLICITUD AJAX GRAFICO DE BARRAS DE VENTAS DEL MES
