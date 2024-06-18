@@ -228,7 +228,7 @@
                             dataType: 'json',
                             success: function(respuesta){
                                 console.log(respuesta)
-                                if (respuesta == "ok") {
+                                if (respuesta == "nel") {
 
                                     Toast.fire({
                                     icon: 'success',
