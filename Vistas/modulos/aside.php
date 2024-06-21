@@ -26,10 +26,7 @@
         </div>
     </div>
 
-    <!-- Botón para contraer el menú -->
-    <div><a href="#" class="brand-link toggle-btn">
-                    <i class="fas fa-bars"></i>
-                </a></div>
+    
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -179,13 +176,5 @@ $(".nav-link").on('click', function() {
     $(this).addClass('active');
 })
 
-// Al hacer clic en el botón de toggle
-$('.toggle-btn').on('click', function(e) {
-    e.preventDefault();
-    $('body').toggleClass('sidebar-collapse');
-});
-
-// Si deseas cerrar el menú al cargar la página, puedes agregar esto:
-$('body').addClass('sidebar-collapse');
-});
+}
 </script>

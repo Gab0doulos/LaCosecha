@@ -76,19 +76,3 @@ div.dataTables_wrapper {
   margin: 0 auto;
 }
 
-.toggle-btn {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  color: #fff;
-  font-size: 20px;
-}
-
-/* Estilo para el menú contraído */
-.sidebar-collapse .nav-sidebar {
-  display: none; /* Oculta el menú */
-}
-
-.sidebar-collapse .toggle-btn {
-  right: 20px; /* Ajusta la posición del botón */
-}
