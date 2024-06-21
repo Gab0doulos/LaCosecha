@@ -10,7 +10,7 @@
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><<a style="cursor: pointer;" class="nav-link" href="Vistas/dashboard.php">Inicio</a></li>
+                    <li class="breadcrumb-item"><a style="cursor: pointer;" class="nav-link" href="Vistas/ventas.php">Inicio</a></li>
                     <li class="breadcrumb-item active">Tablero Principal</li>
                 </ol>
             </div><!-- /.col -->
