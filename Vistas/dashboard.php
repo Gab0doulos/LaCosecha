@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">Tablero Principal hola</h1>
+                <h1 class="m-0">Tablero Principal</h1>
                 <a href="#" class="brand-link toggle-btn">
                     <i class="fas fa-bars"></i>
                 </a>
@@ -12,12 +12,6 @@
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                     <li class="breadcrumb-item active">Tablero Principal</li>
-                    <li>
-                        <!-- Botón o enlace para mostrar/ocultar el sidebar -->
-                        <a href="#" class="btn btn-default" id="toggleSidebarBtn">
-                            <i class="fas fa-bars"></i> Mostrar/Esconder Menú
-                        </a>
-                    </li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
