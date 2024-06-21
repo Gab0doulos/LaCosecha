@@ -4,9 +4,9 @@
         <div class="row mb-2">
             <div class="col-sm-6">
                  <!-- Botón para contraer el menú -->
-                 <a href="#" class="brand-link toggle-btn">
+                <div><a href="#" class="brand-link toggle-btn">
                     <i class="fas fa-bars"></i>
-                </a>
+                </a></div>
             <h1 class="m-0">Tablero Principal</h1>
             <h1><a href="#" class="brand-link toggle-btn"></h1>
                 
