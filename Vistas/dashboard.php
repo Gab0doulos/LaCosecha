@@ -6,8 +6,7 @@
                  
             <h1 class="m-0">Tablero Principal</h1>
                 
-                    <i class="fas fa-bars"></i>
-                </a>
+                    
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
