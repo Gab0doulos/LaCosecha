@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">Tablero Principal</h1><a href="#" class="brand-link toggle-btn">
+            <a href="#" class="brand-link toggle-btn"><h1 class="m-0">Tablero Principal</h1>
                 
                     <i class="fas fa-bars"></i>
                 </a>
