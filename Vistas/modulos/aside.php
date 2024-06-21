@@ -26,6 +26,11 @@
         </div>
     </div>
 
+    <!-- Botón para contraer el menú -->
+    <div><a href="#" class="brand-link toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </a></div>
+
     <!-- Sidebar -->
     <div class="sidebar">
 
