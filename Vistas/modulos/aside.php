@@ -167,8 +167,20 @@
 </aside>
 
 <script>
+$(document).ready(function() {
+
 $(".nav-link").on('click', function() {
     $(".nav-link").removeClass('active');
     $(this).addClass('active');
 })
+
+// Al hacer clic en el botón de toggle
+$('.toggle-btn').on('click', function(e) {
+    e.preventDefault();
+    $('body').toggleClass('sidebar-collapse');
+});
+
+// Si deseas cerrar el menú al cargar la página, puedes agregar esto:
+$('body').addClass('sidebar-collapse');
+});
 </script>
