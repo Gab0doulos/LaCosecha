@@ -5,7 +5,6 @@
             <div class="col-sm-6">
                  
             <h1 class="m-0">Tablero Principal</h1>
-            <h1><a href="#" class="brand-link toggle-btn"></h1>
                 
                     <i class="fas fa-bars"></i>
                 </a>
